@@ -1,5 +1,5 @@
 invitados = {}
-
+car = {}
 def mostrar_menu():
     print('1. Registrar el nombre de un invitado, su género y carrera')
     print('2. Ver todos los nombres de los invitados')
@@ -22,5 +22,7 @@ def registrar():
     nombre = input('Ingrese el nombre del invitado: ')
     genero = input('Ingrese el género del invitado: ')
     carrera = input('Ingrese la carrera del invitado: ')
+    print(f'{nombre} es {genero} de la carrera de {carrera}. Fue invitado')
 
-    invitados[nombre] = genero,carrera
+    invitados[nombre] = genero
+    car[nombre] = carrera
