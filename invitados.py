@@ -23,4 +23,14 @@ def registrar():
     genero = input('Ingrese el género del invitado: ')
     carrera = input('Ingrese la carrera del invitado: ')
 
-    invitados[nombre] = genero,carrera
+    invitados[nombre] = [genero,carrera]
+
+while True:
+    mostrar_menu()
+    opcion = input('Elija una opción: ')
+
+    if opcion == '1':
+        registrar()
+    elif opcion == '2':
+        for nombres in invitados:
+            print(nombres)
